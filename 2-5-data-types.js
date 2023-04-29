@@ -32,7 +32,7 @@ alert(`результат: ${1 + 2}`); // результат: 3
 let isGreater = 4 > 1;
 alert(isGreater); // true (результат порівняння — "так")
 
-//TODO: Об’єкти (object) та символи (symbol)
+//TODO: об’єкти (object) та символи (symbol)
 /*
 1) Тип object є особливим типом.
 Усі інші типи називаються “примітивами”, тому що їхні значення можуть містити тільки один елемент: 
@@ -40,3 +40,23 @@ alert(isGreater); // true (результат порівняння — "так")
 В об’єктах же зберігаються колекції даних і більш складні структури.
 2) Тип symbol використовується для створення унікальних ідентифікаторів в об’єктах.
 */
+
+//TODO: оператор typeof
+typeof undefined // "undefined"
+typeof 0 // "number"
+typeof 10n // "bigint"
+typeof true // "boolean"
+typeof "foo" // "string"
+typeof Symbol("id") // "symbol"
+typeof Math // "object"  (1)
+typeof null // "object"  (2)
+typeof alert // "function"  (3)
+
+//TODO: ex 
+let nameOfUser = "Ілля";
+// вираз — число 1
+alert( `привіт ${1}` ); // привіт 1
+// вираз є рядком "name"
+alert( `привіт ${"nameOfUser FF gg"}` ); // привіт nameOfUser FF gg
+// вираз є змінною, яка вбудовується
+alert( `привіт ${nameOfUser}` ); // привіт Ілля
