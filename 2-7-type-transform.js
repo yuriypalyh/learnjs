@@ -1,5 +1,5 @@
-/*TODO: перетворення на рядок. коли нам потрібне значення у формі рядка.
-очевидно false стає "false", null стає "null" тощо.
+/*TODO: Перетворення на рядок. Відбувається, коли ми щось виводимо. Може бути виконане за допомогою String(value)
+Очевидно false стає "false", null стає "null" тощо.
 */
 let value = true;
 console.log(typeof value); // boolean
@@ -7,7 +7,7 @@ console.log(typeof value); // boolean
 value = String(value); // тепер value - це рядок "true"
 console.log(typeof value); // string
 
-/*TODO: перетворення на число.
+/*TODO: Перетворення на число.
 Перетворення на числа відбувається в математичних функціях і виразах автоматично.
 Наприклад, коли ділення / застосовується до не-чисел:
 */
@@ -20,7 +20,7 @@ console.log(typeof str); // string
 let num = Number(str); // стає числом 123
 console.log(typeof num); // number
 
-/*TODO: перетворення на булевий тип.
+/*TODO: Перетворення на булевий тип.
 Значення, які інтуїтивно “порожні”, такі як 0, порожній рядок, null, undefined та NaN, стають false.
 Інші значення стають true.
 */
