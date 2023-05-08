@@ -133,12 +133,12 @@ console.log(n); // 14
 Інкремент ++ збільшує змінну на 1:*/
 let counter = 2;
 counter++;        // працює так само, як counter = counter + 1, але запис коротше
-alert( counter ); // 3
+alert(counter); // 3
 
 //Декремент -- зменшує змінну на 1:
 let counter2 = 2;
 counter--;        // працює так само, як counter = counter - 1, але запис коротше
-alert( counter2 ); // 1
+alert(counter2); // 1
 
 /*FIXME: Оператори ++ та -- можуть розташовуватися до або після змінної.
 Коли оператор йде за змінною, він у “постфіксній формі”: counter++.
@@ -150,8 +150,8 @@ let adsd = ++counter; // (*)
 alert(adsd); // 2
 //Постфіксна
 let counterSs = 1;
-let a = counterSs++; // (*) змінили ++counter на counter++
-alert(a); // 1
+let ao = counterSs++; // (*) змінили ++counter на counter++
+alert(ao); // 1
 //Якщо ми хочемо збільшити значення та негайно використати результат оператора, нам потрібна префіксна форма:
 let counterDd = 0;
 alert(++counterDd); // 1
@@ -176,21 +176,20 @@ let someExample = (1 + 2, 3 + 4);
 alert(someExample); // 7 (результат обчислення 3 + 4)
 
 //FIXME: Example:
-let one = 1, two = 1;
-let ccc = ++one; // ?
-let ddd = two++; // ?
+let a = 1, b = 1;
+let c = ++a; // ?
+let d = b++; // ?
 /*Answer:
-one = 2
-two = 2
-ccc = 2
-ddd = 1
+a = 2
+b = 2
+c = 2
+d = 1
 */
 /*
-let one = 1, two = 1;
+let a = 1, b = 1;
 
-alert(++one); // 2, префіксна форма повертає нове значення
-alert(two++); // 1, постфіксна форма повертає старе значення
-
-alert(one); // 2, збільшується один раз
-alert(two); // 2, збільшується один раз
+alert( ++a ); // 2, префіксна форма повертає нове значення
+alert( b++ ); // 1, постфіксна форма повертає старе значення
+alert( a ); // 2, збільшується один раз
+alert( b ); // 2, збільшується один раз
 */
