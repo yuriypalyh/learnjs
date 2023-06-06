@@ -11,3 +11,5 @@ console.log(adminName);
 
 let ourPlanetName = "Земля";
 let currentUserName = "Іван";
+
+//pdsdsd
